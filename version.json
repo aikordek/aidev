@@ -1,9 +1,9 @@
 {
-  "version": "v260303.01 10:30am",
-  "release": 1,
-  "sha": "34d9fa2",
-  "fullSha": "34d9fa25361d9645dc94a3e6a1b4ce00abaa62dc",
+  "version": "v260303.02 2:43pm",
+  "release": 2,
+  "sha": "aa3ff64",
+  "fullSha": "aa3ff6472ae0e7dfc3ba156c0035973c96cd42a0",
   "actor": "aikordek",
-  "pushedAt": "2026-03-03T16:30:08Z",
-  "commits": []
+  "pushedAt": "2026-03-03T20:43:13Z",
+  "commits": [{"sha": "47d2e5a", "message": "feat: set up Tailwind CSS v4 standalone build + fix basePath", "author": "Ai"}, {"sha": "17f0f7b", "message": "feat: connect Supabase project (aiinfra / nppcwprqiizrrnlrdeog)", "author": "Ai"}, {"sha": "223a4f6", "message": "feat: add Resend email via send-email edge function", "author": "Ai"}, {"sha": "323c9aa", "message": "feat: add Google Gemini AI via ai-generate edge function", "author": "Ai"}, {"sha": "b76c96c", "message": "docs: update CLAUDE.md with actual project config and service details", "author": "Ai"}, {"sha": "aa3ff64", "message": "Merge pull request #1 from aikordek/claude/cranky-ramanujan", "author": "Ai Kordek"}]
 }
