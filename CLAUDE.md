@@ -25,8 +25,8 @@ This file provides context for Claude (AI assistant) when working on this codeba
 - i18n: Dictionary-based multi-language support
 
 **Live URLs:**
-- Public site: https://aikordek.github.io/alpacapps-infra/
-- GitHub repo: https://github.com/aikordek/alpacapps-infra
+- Public site: https://aikordek.github.io/aidev/
+- GitHub repo: https://github.com/aikordek/aidev
 - Supabase dashboard: https://supabase.com/dashboard/project/nppcwprqiizrrnlrdeog
 
 ## Deployment
@@ -87,7 +87,7 @@ supabase secrets set KEY=value            # store secret
 - `src/lib/email.ts` — `sendEmail({ to, subject, html })` via Resend edge function
 - `src/lib/ai.ts` — `aiGenerate({ prompt, model?, system?, history? })` via Gemini edge function
 - `shared/supabase.js` — Supabase client (vanilla JS)
-- `next.config.ts` — basePath: `/alpacapps-infra`
+- `next.config.ts` — basePath: `/aidev`
 - `src/i18n/config.ts` — supported locales
 - `src/i18n/dictionaries/*.json` — translation files
 - `src/contexts/auth-context.tsx` — authentication context
