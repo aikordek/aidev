@@ -1,9 +1,9 @@
 {
-  "version": "v260303.03 2:45pm",
-  "release": 3,
-  "sha": "d3904e7",
-  "fullSha": "d3904e76e6bc9f124eab3e1b064ced2edc1abd91",
+  "version": "v260304.01 4:04pm",
+  "release": 1,
+  "sha": "6a2e599",
+  "fullSha": "6a2e599e06d9aa78a332d1f3a61792515a9f37e5",
   "actor": "aikordek",
-  "pushedAt": "2026-03-03T20:45:31Z",
-  "commits": [{"sha": "5b9dedd", "message": "chore: rename repo to aidev, update basePath to /aidev", "author": "Ai"}, {"sha": "d3904e7", "message": "Merge pull request #2 from aikordek/claude/cranky-ramanujan", "author": "Ai Kordek"}]
+  "pushedAt": "2026-03-04T22:04:06Z",
+  "commits": [{"sha": "6a69cd5", "message": "feat: add Google Sign-In to login page and shared auth modal", "author": "Ai"}, {"sha": "6a2e599", "message": "Merge pull request #3 from aikordek/claude/loving-wu", "author": "Ai Kordek"}]
 }
