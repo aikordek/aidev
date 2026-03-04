@@ -161,6 +161,16 @@
                     '<h2 class="auth-modal__title">Sign In</h2>' +
                     '<p class="auth-modal__subtitle">Authorized administrators only</p>' +
                 '</div>' +
+                '<button class="auth-modal__google" id="authGoogleBtn" type="button">' +
+                    '<svg width="18" height="18" viewBox="0 0 48 48" style="flex-shrink:0">' +
+                        '<path fill="#4285F4" d="M47.5 24.5c0-1.6-.1-3.2-.4-4.7H24v8.9h13.2c-.6 3-2.3 5.5-4.9 7.2v6h7.9c4.6-4.3 7.3-10.6 7.3-17.4z"/>' +
+                        '<path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.9-6c-2.1 1.4-4.8 2.3-8 2.3-6.1 0-11.3-4.1-13.2-9.7H2.7v6.2C6.7 42.9 14.8 48 24 48z"/>' +
+                        '<path fill="#FBBC05" d="M10.8 28.8c-.5-1.4-.8-2.8-.8-4.3s.3-3 .8-4.4v-6.2H2.7C1 17.1 0 20.4 0 24s1 6.9 2.7 9.9l8.1-5.1z"/>' +
+                        '<path fill="#EA4335" d="M24 9.6c3.4 0 6.5 1.2 8.9 3.5l6.6-6.6C35.9 2.5 30.4 0 24 0 14.8 0 6.7 5.1 2.7 14.1l8.1 5.1C12.7 13.7 17.9 9.6 24 9.6z"/>' +
+                    '</svg>' +
+                    '<span>Sign in with Google</span>' +
+                '</button>' +
+                '<div class="auth-modal__divider"><span>or</span></div>' +
                 '<form class="auth-modal__form" id="authLoginForm">' +
                     '<div class="auth-modal__field">' +
                         '<label for="authEmail">Email</label>' +
@@ -181,6 +191,16 @@
         document.getElementById('authModalBackdrop').addEventListener('click', closeLoginModal);
         document.getElementById('authModalClose').addEventListener('click', closeLoginModal);
         document.addEventListener('keydown', handleModalEsc);
+
+        document.getElementById('authGoogleBtn').addEventListener('click', function() {
+            var btn = document.getElementById('authGoogleBtn');
+            btn.disabled = true;
+            btn.querySelector('span').textContent = 'Redirecting\u2026';
+            sb.auth.signInWithOAuth({
+                provider: 'google',
+                options: { redirectTo: window.location.origin + window.location.pathname }
+            });
+        });
 
         document.getElementById('authLoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
